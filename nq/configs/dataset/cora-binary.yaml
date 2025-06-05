@@ -1,0 +1,2 @@
+_target_: nq.datasets.cora.CoraBinary
+name: cora-2-vs-all

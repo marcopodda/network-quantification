@@ -1,0 +1,7 @@
+_target_: torch_geometric.nn.GAT
+hidden_channels: ???
+num_layers: ???
+act: gelu
+heads: 4
+dropout: 0.2
+norm: LayerNorm

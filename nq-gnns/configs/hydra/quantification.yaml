@@ -1,0 +1,12 @@
+# https://hydra.cc/docs/configure_hydra/intro/
+
+# enable color logging
+defaults:
+  - override hydra_logging: disabled
+  - override job_logging: colorlog
+
+output_subdir: null
+
+# output directory, generated dynamically on each run
+run:
+  dir: ${paths.log_dir}/${dataset_name}/${model_name}/train/fold_${fold_index}/L=${num_layers}-h=${hidden_dim}/quantification/${task_name}

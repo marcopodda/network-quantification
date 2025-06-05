@@ -1,0 +1,21 @@
+# @package _global_
+
+# specify here default configuration
+# order of defaults determines the order in which configs override each other
+defaults:
+  - _self_
+  - dataset: ???
+  - paths: default
+  - hydra: quantify
+
+# task name, determines output directory path among [validation, test]
+task_name: "validation"
+
+# seed for reproducibility
+seed: 0
+
+trial: ???
+
+fold_index: ???
+
+model: ???

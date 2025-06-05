@@ -1,0 +1,6 @@
+_target_: torch_geometric.nn.GIN
+hidden_channels: ???
+num_layers: ???
+act: gelu
+dropout: 0.2
+norm: LayerNorm

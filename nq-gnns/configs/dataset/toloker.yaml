@@ -1,0 +1,22 @@
+_target_: netquant.datasets.datamodule.DataModule
+
+defaults:
+  - _self_
+  - loaders: default.yaml
+
+dataset:
+  _target_: netquant.datasets.toloker.Toloker
+
+loaders:
+  train:
+    batch_size: 128
+    num_neighbors: [100]
+    num_layers: ${model.network.num_layers}
+  val:
+    batch_size: 128
+    num_neighbors: [100]
+    num_layers: ${model.network.num_layers}
+  test:
+    batch_size: 128
+    num_neighbors: [100]
+    num_layers: ${model.network.num_layers}

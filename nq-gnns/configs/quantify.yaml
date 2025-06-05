@@ -1,0 +1,23 @@
+# @package _global_
+
+# specify here default configuration
+# order of defaults determines the order in which configs override each other
+defaults:
+  - _self_
+  - paths: default
+  - extras: default
+  - hydra: quantification
+
+# name of the run, accessed by loggers
+name: "nc-exp"
+
+# seed for reproducibility
+seed: 0
+
+task_name: ???
+
+dataset_name: ???
+model_name: ???
+num_layers: ???
+hidden_dim: ???
+fold_index: ???

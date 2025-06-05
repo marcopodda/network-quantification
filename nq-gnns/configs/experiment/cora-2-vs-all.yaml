@@ -1,0 +1,29 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+# all parameters below will be merged with parameters from default configurations set above
+# @package _global_
+# this allows you to overwrite only specified parameters
+
+defaults:
+  - /dataset: cora
+  - /model: default
+  - /model/network: ???
+
+dataset:
+  dataset:
+    name: cora-2-vs-all
+
+model:
+  network:
+    in_channels: 1433
+
+callbacks:
+  early_stopping:
+    patience: 20
+
+trainer:
+  min_epochs: 5
+  max_epochs: 100
