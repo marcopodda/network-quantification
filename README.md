@@ -11,7 +11,7 @@ Instructions to make them run are contained in README.md files inside the folder
 
 
 ### Citation
-If you use our work, please use the following citation:
+If you use our work, please cite it as follows:
 
 ```
 @article{XNQ2025,
